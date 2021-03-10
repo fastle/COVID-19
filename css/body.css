@@ -1,0 +1,21 @@
+#title1{
+    color: red;
+}
+body {
+    background-image: url("../image/background.jpg");
+    width: 100%;
+}
+.my-navbar {
+    background: #003366CE;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.my-navbar a{
+    color: #999999;
+}
+
+.mypanel{
+    background: #999999E4;
+}
