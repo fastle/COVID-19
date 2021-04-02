@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>美国疫情可视化</title>
-
+  <script src="js/echarts.min.js"></script>
   <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
   <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -19,14 +19,22 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.html">主页</a></li>
-        <li class="active"><a href="#">全国数据分时</a></li>
+        <li class="active"><a href="#">分时数据</a></li>
         <li><a href="states.html">各州数据</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="container">
+<div class="container" style="height: 800px">
+  <div id="timeline1"  style="height: 500px;height: 100%">
 
+  </div>
 </div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+  <p class="mb-1">made by <a href="https://github.com/fastle" target="_blank">fastle</a></p>
+  <p class="mb-1">素材全部来自于网络，仅用于学习交流。若侵犯了您的权益，请联系fastle@163.com</p>
+</footer>
 </body>
+<script src="js/timeline.js">
+</script>
 </html>

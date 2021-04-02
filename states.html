@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>美国疫情可视化</title>
-
+  <script src="js/echarts.min.js"></script>
   <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
   <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -19,14 +19,41 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.html">主页</a></li>
-        <li><a href="country.html">全国数据分时</a></li>
+        <li><a href="timeline.html">分时数据</a></li>
         <li class="active"><a href="#">各州数据</a></li>
       </ul>
     </div>
   </div>
 </nav>
 <div class="container">
+  <div class = "map">
+    <div id="statecharts">
+      <select id="c1">
+        <option value="0">选择要查询的州</option>
+        <option value="1">Alabama</option>
+        <option value="2">Alaska</option>
+        <option value="3">Arizona</option>
+        <option value="4">Arkansas</option>
+        <option value="5">California</option>
+        <option value="6">Colorado</option>
+        <option value="7">Connecticut</option>
+      </select>
+      <div id="chartists" style="height: 600px;width: 100%">
 
+      </div>
+      <div style="height: 400px;width: 100%">
+
+      </div>
+    </div>
+  </div>
+  <div class="list container" id="list" style="height: 1200px">
+  </div>
 </div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+  <p class="mb-1">made by <a href="https://github.com/fastle" target="_blank">fastle</a></p>
+  <p class="mb-1">素材全部来自于网络，仅用于学习交流。若侵犯了您的权益，请联系fastle@163.com</p>
+</footer>
 </body>
+<script src="js/statecharts.js">
+</script>
 </html>
